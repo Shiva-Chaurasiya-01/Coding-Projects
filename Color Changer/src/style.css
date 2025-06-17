@@ -1,0 +1,53 @@
+/* Made utilities using new methods */
+/* Use custom themes for Color  */
+
+@import "tailwindcss";
+@import "tailwindcss/utilities" layer(components);
+
+@theme{
+  --color-custom-yellow : #EDFB52 ;
+  --color-custom-green : #22ff22 ;
+  --color-custom-blue : #27a5ff ;
+  --color-custom-red : #ff1c1c ;
+}
+
+@layer components {
+  body {
+    background: #000;
+  }
+
+  h1 {
+    @apply text-center text-[#ffffff] font-bold font-mono text-4xl p-[20px];
+  }
+
+  .main {
+    @apply flex  w-[100vh];
+  }
+
+  .box {
+    @apply flex  flex-wrap justify-center  h-[500px] w-[500px] mt-[60px];
+  }
+
+  .color-btn {
+    @apply w-[200px] h-[200px] ml-[25px] mr-[25px] rounded-[20px] transition-all duration-[1.1s] ease-in-out hover:scale-110 border-3;
+  }
+
+  .reset-btn {
+    @apply ml-[25px] mr-[25px] rounded-[20px] transition-all duration-[1.1s] ease-in-out hover:scale-110 border-3 bg-amber-50 pt-[15px] pb-[15px] pl-[40px] pr-[40px] text-[18px] font-bold;
+  }
+  #yellow {
+    background-color: var(--color-custom-yellow) ;
+  }
+  
+  #red {
+    background-color: var(--color-custom-red) ;
+  }
+  
+  #green {
+    background-color: var(--color-custom-green) ;  
+  }
+  
+  #blue {
+    background-color: var(--color-custom-blue) ;
+  }
+}
