@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities" layer(components);
+
+@layer components {
+  body {
+    background-color: black;
+    color: White;
+    margin: 0px;
+    font-family: monospace;
+  }
+
+  .heading {
+    @apply text-2xl text-center p-5;
+  }
+
+  .container {
+    @apply flex justify-center text-[20px];
+  }
+
+  /* When click the value to enter the focus goes to input  section and a border appers this can be removed using outline or can make a custom outline using focus */
+
+  form {
+    @apply flex justify-center flex-col;
+  }
+  .form-input {
+    @apply bg-white h-6 w-[125px] rounded-2xl border-white text-black text-[16px] text-center;
+    outline: none;
+  }
+
+  .cal-btn {
+    @apply rounded-[15px] border-2 pl-5 pr-5 pt-2.5 pb-2.5 flex items-center justify-center transition-all ease-in-out duration-[1.1s] hover:scale-110;
+  }
+
+  .result {
+    @apply flex flex-row text-2xl justify-center mt-[50px] gap-2 items-center text-center;
+  }
+
+  .guide {
+    @apply flex items-center text-[16px] flex-col border-2 rounded-2xl p-5 mx-auto mt-8 max-w-[400px];
+  }
+
+  .weight{
+    @apply relative top-[-9px]
+  }
+
+  h2 {
+    @apply mb-[20px] text-2xl font-bold;
+  }
+}

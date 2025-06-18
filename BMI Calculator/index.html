@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header class="heading">
+      <h1>BMI Calculator</h1>
+    </header>
+
+    <main class="container">
+      <form>
+        <div>
+          <label>Height in CM : </label>
+          <input type="number" class="form-input" id="height" />
+        </div>
+
+        <br />
+
+        <div>
+          <label>Weight in KG : </label>
+          <input type="number" class="form-input" id="weight" />
+        </div>
+
+        <br />
+        <button class="cal-btn">Calculate</button>
+      </form>
+    </main>
+
+    <div class="result">
+      <h2>Result :</h2>
+      <span class="weight hidden text-yellow-300" id="under-w"
+        >Under Weight</span
+      >
+      <span class="weight hidden text-green-500" id="normal-w"
+        >Normal Weight</span
+      >
+      <span class="weight hidden text-orange-500" id="over-w">Over Weight</span>
+      <span class="weight hidden text-red-500" id="obesity-w">Obesity</span>
+      <span class="weight hidden text-pink-500" id="error">Please enter valid details</span>
+    </div>
+
+    <footer class="guide">
+      <h2>BMI Weigth Guide</h2>
+      <div class="para">
+        <p class="weight-guide">Under Weight = Less than 18.6</p>
+        <p class="weight-guide">Normal Range = Between 18.6 and 24.9</p>
+        <p class="weight-guide">Over Weight = Greater than 24.9</p>
+        <p class="weight-guide">Obesity = Greater than 30.0</p>
+      </div>
+    </footer>
+    
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>
